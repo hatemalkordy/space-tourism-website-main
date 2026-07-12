@@ -291,7 +291,7 @@ main .container .first-side .p2 {
     }
 }
 
-main .container .button {
+main .container .exp-btn {
     width: 240px;
     height: 240px;
     border-radius: 50%;
@@ -307,7 +307,7 @@ main .container .button {
     transition: color var(--main-transition-du) ease, transform var(--main-transition-du) ease;
 }
 
-main .container .button:hover {
+main .container .exp-btn:hover {
     background-color: var(--main-color);
     transform: rotate(360deg);
 } 
