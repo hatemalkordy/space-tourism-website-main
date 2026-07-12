@@ -1,0 +1,316 @@
+/* Start Variables */
+:root {
+    --main-transition-du: 0.3s;
+    --main-color: #D0D6F9;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--main-transition-du);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+/* start header */
+
+body {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-size: cover;
+}
+
+@media (max-width: 992px) {
+    body {
+        background-image: url(../assets/home/background-home-tablet.jpg);
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(../assets/home/background-home-mobile.jpg);
+        background-size: cover;
+    }
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+header .container .pages {
+    display: flex;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    header .container .pages {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        z-index: 100;
+        top: 150px;
+        right: -10px;
+    }
+
+    header .container .pages.active {
+    display: flex;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container .pages {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        z-index: 100;
+        top: 150px;
+        right: -10px;
+    }
+
+    header .container .pages.active {
+    display: flex;
+    }
+}
+
+header .container .pages::before {
+    content: "";
+    position: absolute;
+    left: -65%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+    z-index: 5;
+}
+
+@media (max-width: 992px) {
+    header .container .pages::before {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container .pages::before {
+        display: none;
+    }
+}
+
+header .container .pages li a {
+    display: flex;
+    padding: 10px 12px;
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--main-color);
+    border-bottom: 2px solid transparent;
+    padding-bottom: 12px;
+    transition: border-color var(--main-transition-du) ease, color var(--main-transition-du) ease;
+}
+
+@media (max-width: 768px) {
+    header .container .pages li a {
+        margin-bottom: 10px;
+        width: 100%;
+        border-bottom: 2px solid #ddd;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container .pages li a {
+        margin-bottom: 10px;
+        width: 100%;
+        border-bottom: 2px solid #ddd;
+    }
+}
+
+header .container .pages li:hover a {
+    color: white;
+    border-bottom-color: white;
+    /* transform: scale(1.1); */
+}
+
+header .container .pages li:last-child {
+    margin-right: 0px;
+}
+
+header .container .pages li.active a {
+    border-bottom: 2px solid white;
+    padding-bottom: 12px;
+    color: white;
+}
+
+header .container .menu-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header .container .menu-toggle {
+        display: block;
+    }
+
+    header .container .menu-toggle .close {
+        display: none;
+    }
+
+    header .container .menu-toggle.active .open {
+        display: none;
+    }
+
+    header .container .menu-toggle.active .close {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container .menu-toggle {
+        display: block;
+    }
+
+    header .container .menu-toggle .close {
+        display: none;
+    }
+
+    header .container .menu-toggle.active .open {
+        display: none;
+    }
+
+    header .container .menu-toggle.active .close {
+        display: block;
+    }
+}
+
+/* end header */
+
+/* start main */
+
+main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vb;
+}
+
+@media (max-width: 768px) {
+    main .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+main .container .first-side .p1 {
+    color: var(--main-color);
+    font-size: 30px;
+    margin: 0;
+    word-spacing: 10px;
+    text-transform: capitalize;
+}
+
+main .container .first-side h1 {
+    color: white;
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    /* margin: 20px 0; */
+}
+
+main .container .first-side .p2 {
+    color: var(--main-color);
+    max-width: 410px;
+    width: 100%;
+    line-height: 2;
+}
+
+@media (max-width: 768px) {
+    main .container .first-side .p2 {
+        width: 95%;
+        margin: 0 auto;
+        word-spacing: 2px;
+    }
+}
+
+main .container button {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    /* font-size: 30px; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: color var(--main-transition-du) ease, transform var(--main-transition-du) ease;
+}
+
+main .container button:hover {
+    background-color: var(--main-color);
+    transform: rotate(360deg);
+} 
+
+main .container button a {
+    font-size: 30px;
+    font-family: 'Bellefair', serif;
+    color: #3b3b3b;
+}
+
+/* end main */
