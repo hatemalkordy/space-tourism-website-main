@@ -292,19 +292,19 @@ main .container .first-side .p2 {
 }
 
 main .container .exp-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 240px;
     height: 240px;
     border-radius: 50%;
     font-size: 30px;
     font-family: 'Bellefair', serif;
     color: #3b3b3b;
-    text-align: center;
-    align-content: center;
+    text-decoration: none;
     background-color: wheat;
-    border: none;
-    outline: none;
     cursor: pointer;
-    transition: color var(--main-transition-du) ease, transform var(--main-transition-du) ease;
+    transition: color var(--main-transition-du) ease, background-color var(--main-transition-du) ease, transform var(--main-transition-du) ease;
 }
 
 main .container .exp-btn:hover {
