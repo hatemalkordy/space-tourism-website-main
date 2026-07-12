@@ -66,20 +66,20 @@ ul {
 /* start header */
 
 body {
-    background-image: url(/assets/home/background-home-desktop.jpg);
+    background-image: url(./assets/home/background-home-desktop.jpg);
     background-size: cover;
 }
 
 @media (max-width: 992px) {
     body {
-        background-image: url(/assets/home/background-home-tablet.jpg);
+        background-image: url(./assets/home/background-home-tablet.jpg);
         background-size: cover;
     }
 }
 
 @media (max-width: 768px) {
     body {
-        background-image: url(/assets/home/background-home-mobile.jpg);
+        background-image: url(./assets/home/background-home-mobile.jpg);
         background-size: cover;
     }
 }
