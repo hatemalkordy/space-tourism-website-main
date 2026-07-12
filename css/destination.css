@@ -418,4 +418,11 @@ main .container .second-side .info span {
     text-transform: uppercase;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
 /* end content */
