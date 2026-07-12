@@ -357,7 +357,6 @@ main .container .first-side .content .second-contet {
 
 main .container .first-side .content .second-contet .terminology {
     text-transform: uppercase;
-    white-space: 5px;
     color: var(--main-color);
     margin-bottom: 15px;
 }
