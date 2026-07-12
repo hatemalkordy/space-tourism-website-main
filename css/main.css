@@ -291,26 +291,25 @@ main .container .first-side .p2 {
     }
 }
 
-main .container button {
+main .container .button {
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    /* font-size: 30px; */
+    font-size: 30px;
+    font-family: 'Bellefair', serif;
+    color: #3b3b3b;
+    text-align: center;
+    align-content: center;
+    background-color: wheat;
     border: none;
     outline: none;
     cursor: pointer;
     transition: color var(--main-transition-du) ease, transform var(--main-transition-du) ease;
 }
 
-main .container button:hover {
+main .container .button:hover {
     background-color: var(--main-color);
     transform: rotate(360deg);
 } 
-
-main .container button a {
-    font-size: 30px;
-    font-family: 'Bellefair', serif;
-    color: #3b3b3b;
-}
 
 /* end main */
