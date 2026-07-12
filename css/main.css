@@ -291,7 +291,7 @@ main .container .first-side .p2 {
     }
 }
 
-main .container a button {
+main .container button {
     width: 240px;
     height: 240px;
     border-radius: 50%;
@@ -302,12 +302,12 @@ main .container a button {
     transition: color var(--main-transition-du) ease, transform var(--main-transition-du) ease;
 }
 
-main .container a button:hover {
+main .container button:hover {
     background-color: var(--main-color);
     transform: rotate(360deg);
 } 
 
-main .container a button {
+main .container button a {
     font-size: 30px;
     font-family: 'Bellefair', serif;
     color: #3b3b3b;
